@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tin tức Công nghệ và Đánh giá Sản phẩm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Đăng Tin Tức Công nghệ hoặc Đánh giá Sản phẩm</h1>
+
+  <form id="newsForm" action="submit.php" method="post">
+    <label for="title">Tiêu đề:</label><br>
+    <input type="text" id="title" name="title"><br>
+    
+    <label for="content">Nội dung:</label><br>
+    <textarea id="content" name="content" rows="4" cols="50"></textarea><br>
+    
+    <label for="category">Danh mục:</label><br>
+    <select id="category" name="category">
+      <option value="cong-nghe">Công nghệ</option>
+      <option value="danh-gia">Đánh giá sản phẩm</option>
+    </select><br><br>
+    
+    <input type="submit" value="Đăng tin">
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
